@@ -33,7 +33,7 @@ st.title("🌿 Plant Disease Detection App")
 st.markdown("Upload a plant leaf image to detect the disease and get details like **cause** and **cure** using a deep learning model.")
 
 # Load the trained model
-model = tf.keras.models.load_model("Plant_disease_detection_model_pwp.keras")
+model = tf.keras.models.load_model("Plant_disease_detection_model_pwp.keras", compile=False)
 
 # Load disease info JSON
 with open("plant_disease.json", "r") as f:
